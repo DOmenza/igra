@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Whack-a-Mole</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Whack-a-Mole</h1>
+            <div class="score-board">Score: <span class="score">0</span></div>
+        </header>
+
+        <div class="game">
+            <div class="hole hole1"><div class="mole"></div></div>
+            <div class="hole hole2"><div class="mole"></div></div>
+            <div class="hole hole3"><div class="mole"></div></div>
+            <div class="hole hole4"><div class="mole"></div></div>
+            <div class="hole hole5"><div class="mole"></div></div>
+            <div class="hole hole6"><div class="mole"></div></div>
+            <div class="hole hole7"><div class="mole"></div></div>
+            <div class="hole hole8"><div class="mole"></div></div>
+            <div class="hole hole9"><div class="mole"></div></div>
+        </div>
+
+        <div class="controls">
+            <!-- Main button will be handled by Telegram API, but we keep a fallback for testing -->
+            <button id="start-btn" class="btn">Start Game</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
